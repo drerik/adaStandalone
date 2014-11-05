@@ -454,5 +454,6 @@ uint32_t spi_transaction (uint8_t a, uint8_t b, uint8_t c, uint8_t d) {
   n = SPI.transfer(b);
   o = SPI.transfer(c);
   p = SPI.transfer(d);
+  delay(5);
   return (m << 24) + (n << 16) + (o << 8) + p;
 }
